@@ -1,0 +1,333 @@
+/* Your CSS styles here */
+	    @import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500&display=swap');
+
+	    * {
+	        margin: 0;
+	        padding: 0;
+	        box-sizing: border-box;
+	        font-family: 'Poppins', sans-serif;
+	    }
+
+	    body {
+	        position: relative;
+	        min-height: 100vh;
+	        background: #dfdfdf; /* Default background color */
+	    }
+
+	    .header {
+	        position: relative;
+	       
+	        left: 0;
+	        width: 100%;
+	        background-color: #dfdfdf;
+	        color: #333;
+	        padding: 10px 10px;
+	        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	        z-index: 1000;
+	        margin-bottom: 30px;
+	    }
+
+	    .header ul {
+	        list-style: none;
+	        margin: 0;
+	        padding: 0;
+	        text-align: right; /* Align the links to the left */
+	    }
+
+	    .header ul li {
+	        display: inline-block;
+	        margin-right: 10px;
+	        margin-left: 20px;
+	        font-size: 14px;
+	    }
+
+	    .header ul li:first-child {
+	        margin-right: 0; /* Remove margin for the first item */
+	    }
+
+	    .header ul li a {
+	        text-decoration: none;
+	        color: #333;
+	        font-weight: 500;
+	        transition: color 0.3s;
+	    }
+
+	    .header ul li a:hover {
+	        color: #ccc;
+	    }
+
+	    .header ul li:nth-child(2) {
+	        margin-right: 40px; /* Adjust space between items */
+	    }
+
+	    .content {
+	        padding-top: 40px; 
+	    }
+
+
+	    /* Your other styles here */
+	    .login-box {
+	        display: flex;
+	        justify-content: center;
+	        flex-direction: column;
+	        width: 300px;
+	        padding: 5px;
+	        margin-left: 50px;
+	        border-radius: 8px;
+	    }
+
+	    .login-header {
+	        text-align: center;
+	        margin: 0 0 40px 0;
+	    }
+
+	    .login-header header {
+	        color: #333;
+	        font-size: 30px;
+	        font-weight: 600;
+	    }
+
+	    .welcome-message {
+	        text-align: center;
+	        margin-bottom: 20px;
+	    }
+
+	    .table-container {
+	        margin-top: px; /* Adjust this value to move the table further down */
+	        padding: 0 40px; /* Increased padding for more spacing */
+	    }
+
+	    .search-form {
+	        text-align: center;
+	        margin-top: 5px;
+	    }
+
+	    .action-buttons a.delete,
+.search-form input[type="submit"].delete {
+    background-color: #877866; /* Light Brown */
+    border-color: #877866; /* Light Brown */
+    color: white; /* Red */
+    margin-left: 20px;
+	        display: inline-block;
+	        padding: 6px 15px;
+	        
+	      
+	        border: none;
+	        border-radius: 20px;
+	        cursor: pointer;
+	        transition: background-color 0.3s;
+	        font-size: 12px;
+}
+
+.action-buttons a.update,
+.search-form input[type="submit"].update {
+    background-color: #fee147; /* yellow */
+    border-color: #fee147; /* yellow*/
+    color: #333;
+    margin-left: 20px;
+	        display: inline-block;
+	        padding: 6px 15px;
+	        
+	        border: none;
+	        border-radius: 20px;
+	        cursor: pointer;
+	        transition: background-color 0.3s;
+	        font-size: 12px;
+}
+
+.action-buttons a.delete,
+.search-form input[type="submit"].delete:hover {
+    background-color: #333; 
+    color: #dfdfdf; 
+    border-color: #333; 
+}
+
+.search-form input[type="submit"]
+{
+	background-color: #333;
+	color: white;
+	margin-left: 20px;
+	  display: inline-block;
+	     padding: 6px 15px;
+	        
+	        border: none;
+	        border-radius: 20px;
+	        cursor: pointer;
+	        transition: background-color 0.3s;
+	        font-size: 12px;
+}
+.action-buttons a.delete:hover
+{
+	background-color:#fee147 ;
+	color: #333;
+}
+
+.action-buttons a.update:hover,
+.search-form input[type="submit"].update:hover {
+    background-color: #333; 
+    color: #fefae0; 
+    border-color: #606c38; 
+}
+
+	    .action-buttons a:not(:last-child) {
+	        margin-right: 10px;
+	    }
+
+	    /* Rest of your styles remain unchanged */
+	    table {
+	        width: 100%;
+	        border-collapse: collapse;
+	        margin-bottom: 40px;
+	       
+	    }
+
+	    th, td {
+	        border: 1px solid #ddd;
+	        padding: 8px;
+	        text-align: center; 
+	    }
+
+	    th {
+	        background-color: #333;
+	        color: white;
+	        font-weight: 500;
+
+	    }
+
+	    td 
+	    {
+	    	font-weight: 400;
+	    	font-size: 14px;
+	    }
+
+	    a {
+	        text-decoration: none;
+	        color: #333;
+	    }
+
+	    a:hover {
+	        text-decoration: underline;
+	    }
+
+	    .result {
+	        margin-top: 20px;
+	        text-align: center;
+	        color: #000;
+	    }
+
+	    footer
+	{
+
+	    background-color: #333;
+	    color: white;
+	    padding: 10px 0;
+	    text-align: center;
+	    z-index: 1000;
+	    bottom: 0;
+	    width: 100%;
+	    font-size: 12px;
+
+	}
+
+	/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000; /* Set a higher z-index value */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    padding-top: 60px;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #ddd; /* Light Yellow */
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #877866; /* Olive Green */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #d32f2f; /* Tan */
+    cursor: pointer;
+}
+
+.modal-content a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 4px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.modal-content a.delete {
+    background-color: #333; /* dark Brown */
+    border-color: #333; /* dark Brown */
+    color: white; 
+}
+
+.modal-content a.update {
+    background-color: #fee147; /* Yellow */
+    border-color: #fee147; /* yellow */
+    color: #333;
+}
+
+.modal-content a.delete:hover {
+    background-color: grey; 
+    color: #333; 
+    
+}
+.modal-content a.update:hover {
+    background-color: grey; 
+    color: white; 
+}
+
+    .banner {
+    background-image: url('arellano.jpg');
+    background-color: #333;
+    background-blend-mode: darken;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9AA5B1;
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+
+.logo-container img {
+    margin-right: 10px; /* Adjust the spacing between the logo and text */
+}
+    
+
+}
+
+
+
+
+

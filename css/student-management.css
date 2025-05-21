@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background: #dfdfdf; /* light grey */
+}
+
+#notif
+{
+	style='color: green; 
+	text-align: center; 
+	font-weight: 600;'
+}
+ .header 
+ {
+	position: relative;	       
+	left: 0;
+	width: 100%;
+	background-color: #dfdfdf;
+	color: #333;
+	padding: 10px 10px;
+	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+	margin-bottom: 30px;
+}
+
+	    .header ul {
+	        list-style: none;
+	        margin: 0;
+	        padding: 0;
+	        text-align: right; 
+	        margin-right: 35px;
+	    }
+
+	    .header ul li {
+	        display: inline-block;
+	        margin-right: 10px;
+	        margin-left: 20px;
+	        font-size: 16px;
+	    }
+
+	    .header ul li:first-child {
+	        margin-right: 0; /* Remove margin for the first item */
+	    }
+
+	    .header ul li a {
+	        text-decoration: none;
+	        color: #333;
+	        font-weight: 500;
+	        transition: color 0.3s;
+	    }
+
+	    .header ul li a {
+	        text-decoration: none;
+	        color: #333;
+	        font-weight: 500;
+	        transition: color 0.3s;
+	    }
+
+	    .header ul li a:hover {
+	        color: #ccc;
+	    }
+
+	    .header ul li:nth-child(2) {
+	        margin-right: 40px; /* Adjust space between items */
+	    }
+
+#login-form
+{
+	margin-left: 30px;
+}
+#login-form input[type="submit"]
+{
+	background-color: #333;
+	color: white;
+	margin-left: 20px;
+	display: inline-block;
+	padding: 6px 15px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	font-size: 12px;
+}
+
+
+
+#banner {
+    background-image: url('arellano.jpg');
+    background-color: #333;
+    background-blend-mode: darken;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9AA5B1;
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+
+#logo-container img {
+    margin-right: 10px;
+}
+
+
+
+.welcome-message {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.login {
+    text-align: center;
+    margin: 20px 0 0 0;
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+.table-container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: white;
+    font-weight: 500;
+}
+
+td {
+    font-weight: 400;
+    font-size: 14px;
+    color: #333;
+}
+
+.action-buttons a.delete {
+    background-color: #333; /* Light Brown */
+    border-color: #333; /* Light Brown */
+    color: white; /* Red */
+    margin-left: 20px;
+    display: inline-block;
+    padding: 6px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 12px;
+}
+
+.action-buttons a.update {
+    background-color: #294D86; /* yellow */
+    border-color: #294D86; /* yellow*/
+    color: white;
+    margin-left: 20px;
+    display: inline-block;
+    padding: 6px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+	position: fixed;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+
+   }
+
+
+   
+

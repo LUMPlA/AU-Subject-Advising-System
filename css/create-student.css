@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500&display=swap');
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        position: relative;
+        min-height: 100vh;
+        background: white; /* Default background color */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header 
+    {
+       position: relative;	       
+       left: 0;
+       width: 100%;
+       background-color: #dfdfdf;
+       color: #333;
+       padding: 10px 10px;
+       box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+       z-index: 1000;
+       margin-bottom: 30px;
+   }
+   
+           .header ul {
+               list-style: none;
+               margin: 0;
+               padding: 0;
+               text-align: right; 
+               margin-right: 35px;
+           }
+   
+           .header ul li {
+               display: inline-block;
+               margin-right: 10px;
+               margin-left: 20px;
+               font-size: 16px;
+           }
+   
+           .header ul li:first-child {
+               margin-right: 0; /* Remove margin for the first item */
+           }
+   
+           .header ul li a {
+               text-decoration: none;
+               color: #333;
+               font-weight: 500;
+               transition: color 0.3s;
+           }
+   
+           .header ul li a {
+               text-decoration: none;
+               color: #333;
+               font-weight: 500;
+               transition: color 0.3s;
+           }
+   
+           .header ul li a:hover {
+               color: #ccc;
+           }
+   
+           .header ul li:nth-child(2) {
+               margin-right: 40px; /* Adjust space between items */
+           }
+    
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        
+    }
+
+    input[type="text"],
+    input[type="password"],
+    select {
+        margin-bottom: 15px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    input[type="submit"],
+    a {
+        margin-bottom: 5px;
+        padding: 10px;
+        text-align: center;
+        background-color: #294D86;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        font-size: 14px; /* Set the font size */
+    }
+
+    input[type="submit"]:hover,
+    a:hover {
+        background-color: #555;
+    }
+    
+    .header {
+        text-align: center;
+        background-color: #294D86;
+        padding: 10px;
+        color: #333;
+        border-bottom: 2px solid <?php echo $border_color; ?>;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .header h2 {
+        font-size: 24px;
+        font-weight: 600;
+        height: 100px;
+        padding: 30px;
+    }
+
+    #header-text {
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+    }
